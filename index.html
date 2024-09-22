@@ -1,43 +1,138 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio</title>
-    <!-- Link para o Bootstrap CSS -->
+    <title>My Portfolio</title>
+    <!-- Link to Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Perpetua', serif; /* Set font to Perpetua */
+            background-color: #000; /* Black background */
+            color: #fff; /* White text */
+        }
+
+        header {
+            background-color: #6f42c1; /* Purple header */
         }
 
         h2 {
             margin-top: 20px;
         }
+
+        .section {
+            padding: 30px 0;
+        }
+
+        .list-group-item {
+            background-color: #333; /* Dark background for list items */
+            border: none; /* Remove borders */
+        }
+
+        .list-group-item:hover {
+            background-color: #444; /* Hover effect */
+        }
+
+        footer {
+            background-color: #222; /* Dark footer background */
+        }
+
+        .profile-img {
+            width: 150px; /* Set the width */
+            height: 150px; /* Set the height */
+            border-radius: 50%; /* Make it round */
+            object-fit: cover; /* Cover the entire area */
+            margin-right: 20px; /* Space between image and text */
+        }
+
+        .about-container {
+            display: flex; /* Align items in a row */
+            align-items: center; /* Center vertically */
+            background-color: #333; /* Dark gray background */
+            border-radius: 15px; /* Rounded corners */
+            padding: 20px; /* Padding around the content */
+        }
+
+        .about-text {
+            border-radius: 15px; /* Rounded corners */
+            padding: 15px; /* Padding inside the text box */
+        }
     </style>
 </head>
 <body>
-    <header class="bg-primary text-white text-center p-4">
-        <h1>Bem-vindo ao Meu Portfólio</h1>
-        <p>Desenvolvedor Web</p>
+    <header class="text-white text-center p-4">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Application Support Analyst</p>
     </header>
 
     <main class="container mt-4">
-        <section>
-            <h2>Projetos Recentes</h2>
+        <!-- About Me Section -->
+        <section class="section">
+            <h2>About Me</h2>
+            <br>
+            <div class="about-container">
+                <img src="https://avatars.githubusercontent.com/u/113397622?v=4" alt="Jean Silva" class="profile-img">
+                <div class="about-text">
+                    <p>Hello! My name is Jean Silva. I am an application support analyst with 2 years of experience in the field. I have a passion for creating exceptional digital experiences, and I also possess solid skills in Rails Console, Ruby, Ruby on Rails, PostgreSQL, and MySQL. My experience includes working with logs, Single Sign-On (SSO), technical investigation, and APIs, among other essential skills to ensure the effectiveness and security of applications. I am always looking for new challenges and opportunities to expand my knowledge and contribute to innovative solutions.</p>
+                </div>
+            </div>
+            <br> <!-- Line break -->
+        </section>
+
+        <!-- Skills Section -->
+        <section class="section">
+            <h2>Skills</h2>
+            <br>
             <ul class="list-group">
-                <li class="list-group-item">Projeto 1</li>
-                <li class="list-group-item">Projeto 2</li>
-                <li class="list-group-item">Projeto 3</li>
+                <li class="list-group-item">HTML/CSS</li>
+                <li class="list-group-item">JavaScript</li>
+                <li class="list-group-item">Bootstrap</li>
+                <li class="list-group-item">React</li>
+                <li class="list-group-item">Node.js</li>
+                <li class="list-group-item">Rails Console</li>
+                <li class="list-group-item">Ruby</li>
+                <li class="list-group-item">Ruby on Rails</li>
+                <li class="list-group-item">PostgreSQL</li>
+                <li class="list-group-item">MySQL</li>
+                <li class="list-group-item">Logs Management</li>
+                <li class="list-group-item">Single Sign-On (SSO)</li>
+                <li class="list-group-item">Technical Investigation</li>
+                <li class="list-group-item">APIs</li>
             </ul>
+            <br> <!-- Line break -->
+        </section>
+
+        <!-- Recent Projects Section -->
+        <section class="section">
+            <h2>Recent Projects</h2>
+            <br>
+            <ul class="list-group">
+                <li class="list-group-item">Project 1</li>
+                <li class="list-group-item">Project 2</li>
+                <li class="list-group-item">Project 3</li>
+            </ul>
+            <br> <!-- Line break -->
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section">
+            <h2>Contact</h2>
+            <br>
+            <p>You can reach me via the following email:</p>
+            <a href="mailto:jeancarlo.jc190@gmail.com"><strong>jeancarlo.jc190@gmail.com</strong></a>
+            <br><br>
+            <p>Or find me on LinkedIn:</p>
+            <a href="https://www.linkedin.com/in/jean-silva-17ba581ab" target="_blank" style="color: #6f42c1;">My LinkedIn</a>
+            <br> <!-- Line break -->
         </section>
     </main>
 
-    <footer class="bg-light text-center p-4">
-        <p>&copy; 2024 Meu Nome</p>
+    <footer class="text-center p-4">
+        <p>&copy; 2024 Jean Silva</p>
     </footer>
 
-    <!-- Scripts do Bootstrap -->
+    <!-- Bootstrap Scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
